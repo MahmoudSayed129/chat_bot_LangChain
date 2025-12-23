@@ -13,18 +13,18 @@ import tempfile
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_pinecone import PineconeVectorStore
 from langchain_core.prompts import ChatPromptTemplate
-from langchain.chains import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain_classic.chains import create_retrieval_chain
+from langchain_classic.chains.combine_documents import create_stuff_documents_chain
+
 
 # ---------- Config ----------
-DATASET_PATH = "data/coaching_millionaer_dataset.json"
 load_dotenv(override=True)
 
 # Environment variables
 HF_TOKEN = os.getenv("HF_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-PINECONE_INDEX_NAME = "ebook"
+PINECONE_INDEX_NAME = "jp-ki-bot"
 
 # ---------- Flask App ----------
 app = Flask(__name__)
