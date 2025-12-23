@@ -9,7 +9,7 @@ langchain-core>=0.3.0
 langchain-community>=0.3.0
 langchain-openai>=0.3.0
 langchain-pinecone>=0.1.0
-
+langchain-classic
 pinecone-client>=4.1.0
 
 deep-translator
